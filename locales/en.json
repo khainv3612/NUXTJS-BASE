@@ -1,0 +1,8 @@
+{
+  "lang": "language",
+  "common": {
+    "copy_success": "Copy Success",
+    "copy_error": "Copy Error",
+    "cancel": "Cancel"
+  }
+}

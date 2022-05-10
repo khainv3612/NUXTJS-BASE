@@ -1,0 +1,123 @@
+.el-button {
+  padding: 8px 17px;
+  border-radius: 8px;
+  span {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    width: 106px;
+    height: 24px;
+    display: inline-block;
+    position: relative;
+  }
+}
+
+
+.el-form--label-left {
+  .el-form-item__label {
+    text-align: left;
+    font-weight: bold;
+    font-size: 14px;
+  }
+}
+
+.el-checkbox__label {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.el-button {
+  font-weight: 500;
+  font-size: 14px;
+  padding: 8px 30px;
+  background-color: $color-btn;
+  color: $color-white;
+  height: 40px;
+}
+
+.el-button--default {
+  &:hover, &:focus {
+    background-color: $color-btn;
+    color: $color-white;
+  }
+}
+
+.el-button--default.is-plain {
+  background-color: $color-white;
+  color: $color-btn;
+  &:hover, &:focus {
+    background-color: $color-white;
+    color: $color-btn;
+    border: 1px solid $color-btn;
+  }
+}
+
+.el-dialog {
+  padding: 12px;
+  .el-dialog__header {
+    text-align: left;
+    padding-bottom: 0;
+    .el-dialog__title {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 29px;
+    }
+  }
+  .el-dialog__body {
+    padding-top: 20px;
+  }
+}
+
+.el-form-item__label, .el-dialog__body {
+  color: $color-black;
+}
+
+.el-select-dropdown__item.hover, .el-select-dropdown__item:hover {
+  background-color: $color-red-primary-200;
+}
+.page-error{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 260px);
+}
+
+@media only screen and (max-width: 720px) {
+  .page-error{
+    height: calc(100vh - 190px);
+    text-align: center;
+    img{
+      width: 90%;
+    }
+  }
+}
+
+.el-message-box {
+  width: 614px;
+}
+
+
+.el-message-box__btns {
+  text-align: center;
+  .el-button:first-child {
+    background-color: $color-white;
+    color: $color-btn;
+    &:hover, &:focus {
+      background-color: $color-white;
+      color: $color-btn;
+      border: 1px solid $color-btn;
+    }
+  }
+  .el-button:last-child {
+    width: 200px;
+    span {
+      width: 160px;
+    }
+  }
+  .el-button {
+    width: max-content;
+    .span {
+      width: max-content;
+    }
+  }
+}
